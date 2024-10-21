@@ -1,0 +1,78 @@
+using System;
+
+class Program
+    {
+//61. Pole trójkąta
+        static double poleTrojkata(double a, double h)
+            {
+                return (a * h) / 2;
+            }
+            
+//62. Pole kwadratu
+        static double poleKwadratu (double a)
+            {
+                return a * a;
+            }
+            
+//63. Pole trapezu
+        static double poleTrapezu (double a, double b, double h)
+            {
+                return ((a + b) * h) / 2;
+            }
+            
+//64. Pole równoległoboku
+        static double poleRownolegloboku (double a, double h)
+            {
+                return a * h;
+            }
+            
+//65. Pole rombu
+        static double poleRombu (double a, double h)
+            {
+                return a * h;
+            }
+            
+//66. Pole sześciokąta
+        static double poleSzesciokata (double a)
+            {
+                return (6 * Math.Sqrt(3) * a * a) / 4;
+            }
+            
+//67. Pole koła
+        static double poleKola (double r)
+            {
+                return Math.PI * r * r;
+            }
+            
+//68. Pole wycinka kołowego
+        static double poleWycinkaKolowego (double r, double alpha)
+            {
+                return (Math.PI * r * r * alpha) / 360;
+            }
+            
+//69. Długość okręgu
+        static double dlugoscOkregu (double r)
+            {
+                return 2 * Math.PI * r;
+            }
+            
+//70. Długość wycinka okręgu
+        static double dlugoscWycinkaOkregu (double r, double alpha)
+            {
+                return (2 * Math.PI * r * alpha) / 360;
+            }
+            
+        static void Main(String[] args)
+            {
+                Console.WriteLine("Pole trójkąta: " + poleTrojkata(1, 2) + " cm2");
+                Console.WriteLine("Pole kwadratu: " + poleKwadratu(3) + " cm2");
+                Console.WriteLine("Pole trapezu: " + poleTrapezu(4, 5 , 6) + " cm2");
+                Console.WriteLine("Pole równoległoboku: " + poleRownolegloboku(7, 8) + " cm2");
+                Console.WriteLine("Pole rombu: " + poleRombu(9, 10) + " cm2");
+                Console.WriteLine("Pole sześciokąta: " + poleSzesciokata(11) + " cm2");
+                Console.WriteLine("Pole koła: " + poleKola(12) + " cm2");
+                Console.WriteLine("Pole wycinka kołowego: " + poleWycinkaKolowego(13, 14) + " cm2");
+                Console.WriteLine("Długość okręgu: " + dlugoscOkregu(15) + " cm");
+                Console.WriteLine("Długość wycinka okręgu: " + dlugoscWycinkaOkregu(16, 17) + " cm");
+            }
+    }
