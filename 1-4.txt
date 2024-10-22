@@ -1,0 +1,109 @@
+#include <iostream>
+using namespace std;
+
+int main()
+    {
+//Zadanie 1
+        cout << "Zadanie 1" << endl;
+        int liczba;
+        cout << "Podaj liczbę całkowitą: ";
+        cin >> liczba;
+        if (liczba % 2 == 0)
+            {
+                cout << "Liczba jest parzysta." << endl;
+            }
+        else
+            {
+                cout << "Liczba jest nieparzysta." << endl;
+            }
+
+//Zadanie 2
+        cout << "Zadanie 2" << endl;
+        int wiek;
+        cout << "Podaj swój wiek: ";
+        cin >> wiek;
+        if (wiek >= 18)
+            {
+                cout << "Jesteś dorosły." << endl;
+            }
+        else
+            {
+                cout << "Nie jesteś dorosły." << endl;
+            }
+        
+//Zadanie 3
+        int temperatura;
+        cout << "Podaj temperaturę w stopniach Celsjusza: ";
+        cin  >> temperatura;
+        if (temperatura < 0)
+            {
+                cout << "Jest zima." << endl;
+            }
+        else if (temperatura >= 0 && temperatura <= 10)
+            {
+                cout << "Jest wiosna." << endl;
+            }
+        else
+            {
+                cout << "Jest lato." << endl;
+            }
+        
+//Zadanie 4
+        double liczba1, liczba2;
+        char operacja;
+        cout << "Podaj 2 liczby: ";
+        cin >> liczba1 >> liczba2;
+        cout << "Podaj operator (+, -, *, /): ";
+        cin >> operacja;
+        switch (operacja)
+            {
+                case '+':
+                    cout << "Wynik: " << liczba1 + liczba2 << endl;
+                    break;
+                case '-':
+                    cout << "Wynik: " << liczba1 - liczba2 << endl;
+                    break;
+                case '*':
+                    cout << "Wynik: " << liczba1 * liczba2 << endl;
+                    break;
+                case '/':
+                    if (liczba != 0)
+                        {
+                            cout << "Wynik: " << liczba1 / liczba2 << endl;
+                        }
+                    else
+                        {
+                            cout << "Nie można dzielić przez 0!" << endl;
+                        }
+                    break;
+                default:
+                    cout << "Nieznany operator." << endl;
+            }
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
