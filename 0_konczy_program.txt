@@ -1,0 +1,27 @@
+using System;
+
+class program
+{
+    public static void Main(string[] args)
+    {
+        int suma = 0;
+        int najwiekszaWartosc = int.MinValue;
+        int liczba;
+        do
+            {
+            Console.Write("Podaj liczbę (0 kończy program): ");
+            liczba = int.Parse(Console.ReadLine());
+            if (liczba != 0)
+                {
+                    suma += liczba;
+                    if (liczba > najwiekszaWartosc)
+                        {
+                            najwiekszaWartosc = liczba;
+                        }
+                }
+            }
+        while (liczba != 0);
+        Console.WriteLine($"Suma wszystkich elementów {suma}");
+        Console.WriteLine($"Największy element: {najwiekszaWartosc}");
+    }
+}
