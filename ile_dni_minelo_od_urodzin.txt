@@ -4,7 +4,7 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine ("Podaj swoją datę urodzin (rok-miesiąc-dzień: ");
+        Console.WriteLine ("Podaj swoją datę urodzin (rok-miesiąc-dzień: )");
         string dane = Console.ReadLine();
         DateTime dataUrodzin;
         if (DateTime.TryParse(dane, out dataUrodzin))
