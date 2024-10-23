@@ -4,7 +4,7 @@ class program
 {
     public static void Main(string[] args)
     {
-        int suma = 0;
+        int suma = 0;g
         int najwiekszaWartosc = int.MinValue;
         int liczba;
         do
