@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Podaj swoją datę urodzin (rok-miesiąc-dzień: ");
+        string dane = Console.ReadLine();
+        DateTime dataUrodzin;
+        if (DateTime.TryParse(dane, out dataUrodzin))
+            {
+                DateTime obecnaData = DateTime.Now;
+                TimeSpan okresDni = obecnaData - dataUrodzin;
+                int roznicaDni = (int)okresDni.TotalDays;
+                Console.WriteLine($"Od twoich urodzin minęło {roznicaDni} dni.");
+            }
+        else
+            {
+                Console.WriteLine("Niepoprawny format.");
+            }
+    }
+}
